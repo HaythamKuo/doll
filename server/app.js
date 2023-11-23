@@ -7,5 +7,8 @@ require("./routes/authRoutes")(app);
 app.use(cors());
 
 app.use(express.json());
+app.get("/", (req, res) => {
+  res.send({ hi: "there" });
+});
 
 module.exports = app;
