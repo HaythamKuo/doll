@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FlexLayout } from "./Theme.style";
 
 export const HomeStyle = styled.div`
   margin-top: 1rem;
@@ -6,36 +7,33 @@ export const HomeStyle = styled.div`
   height: 90%;
 `;
 
-export const Left = styled.div`
-  flex: 2;
+export const Left = styled(FlexLayout)`
+  width: 60%;
   background-color: ${({ theme }) => theme.basic.bgColor};
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 `;
 export const Right = styled.div`
-  flex: 1;
+  width: 40%;
   background-color: ${({ theme }) => theme.basic.bgColor};
   display: flex;
   align-items: center;
 `;
 
 export const Title = styled.div`
-  width: 60%;
+  width: 65%;
   font-size: 4rem;
   font-weight: bold;
-  color: darkblue;
-  text-align: center;
+  color: #ee6c4d;
+  margin-bottom: 3rem;
+  //text-align: center;
 `;
 
 export const Description = styled.p`
   font-size: ${({ theme }) => theme.basic.lisize};
-  color: gray;
-  width: 70%;
-  background-color: red;
+  color: ${({ theme }) => theme.basic.fontColor};
+  width: 65%;
 `;
 export const RightImg = styled.img`
-  width: auto;
+  width: 100%;
   height: 50rem;
 `;

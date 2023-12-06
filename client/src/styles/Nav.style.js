@@ -6,7 +6,7 @@ export const NavContainer = styled.div`
   height: 10vh;
   background-color: ${({ theme }) => theme.basic.bgColor};
 
-  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2rem 6rem ${({ theme }) => theme.basic.boxShadow};
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,7 +43,7 @@ export const NavLi = styled.li`
   margin-right: 3rem;
   &:hover {
     //todo
-    color: lightblue;
+    color: #98c1d9;
   }
 `;
 

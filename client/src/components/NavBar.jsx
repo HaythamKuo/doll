@@ -10,6 +10,7 @@ import {
 } from "../styles/Nav.style";
 
 import logo from "../assets/Humaaans - Buy Online.png";
+
 function NavBar() {
   return (
     <NavContainer>

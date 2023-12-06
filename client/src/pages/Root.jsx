@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { ContainerStyle } from "../styles/Container.style";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 function Root() {
   return (
@@ -8,6 +9,7 @@ function Root() {
       <ContainerStyle>
         <NavBar />
         <Outlet />
+        <Footer />
       </ContainerStyle>
     </>
   );
