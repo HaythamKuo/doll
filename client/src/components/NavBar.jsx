@@ -7,9 +7,13 @@ import {
   NavCenter,
   NavRight,
   LogoStyle,
+  MoonIcon,
+  SunIcon,
+  MobileBar,
 } from "../styles/Nav.style";
 
 import logo from "../assets/Humaaans - Buy Online.png";
+//import { FaRegSun, FaMoon } from "react-icons/fa";
 
 function NavBar() {
   return (
@@ -28,9 +32,10 @@ function NavBar() {
           <NavLi>購物車</NavLi>
           <NavLi>登入</NavLi>
         </NavUl>
+        <MobileBar />
       </NavCenter>
       <NavRight>
-        <input />
+        <MoonIcon />
       </NavRight>
     </NavContainer>
   );

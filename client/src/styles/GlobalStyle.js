@@ -63,6 +63,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; 
   font-family: 'HelveticaNeue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  scroll-behavior:smooth
 }
 body{
 background-color: #EBFFFF;

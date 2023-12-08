@@ -18,13 +18,30 @@ export const show = keyframes`
 }
 `;
 
+//layoyt
 export const FlexLayout = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
 `;
+////////////////////////
 
 const theme = {
+  basic: {
+    lisize: "2rem",
+    bgColor: "white",
+    primaryColor: "#ee6c4d", //偏橘
+    fontColor: "#788DA5",
+    boxShadow: "rgba(0, 0, 0, 0.3)",
+  },
+  rwd: {
+    pad: "768px",
+    mobile: "600px",
+    mt: "2rem",
+  },
+};
+//黑暗模式
+export const darkTheme = {
   basic: {
     lisize: "2rem",
     bgColor: "white",

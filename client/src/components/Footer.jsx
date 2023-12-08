@@ -4,8 +4,9 @@ import {
   Title,
   LiStyle,
   UlContainer,
+  FooterUl,
 } from "../styles/Footer.style";
-import { NavUl } from "../styles/Nav.style";
+
 import {
   SlSocialGithub,
   SlSocialInstagram,
@@ -27,7 +28,7 @@ function Footer() {
 
       <UlContainer>
         <Title>聯繫作者</Title>
-        <NavUl>
+        <FooterUl>
           <LiStyle>
             <SlSocialGithub />
           </LiStyle>
@@ -37,7 +38,7 @@ function Footer() {
           <LiStyle>
             <SlSocialFacebook />
           </LiStyle>
-        </NavUl>
+        </FooterUl>
         <p>Copyright © 2024 Haytham. All rights reserved</p>
       </UlContainer>
     </Container>

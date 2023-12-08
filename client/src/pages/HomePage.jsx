@@ -13,14 +13,14 @@ import ProdList from "../components/ProdList";
 import MainProdItem from "../components/MainProdItem";
 import snowMoutain from "../assets/snowmoutain.jpg";
 import toChange from "../assets/touchDog.svg";
-import { golden, husky } from "/public/hashtag";
+import { golden, husky } from "../../public/hashtag";
 
 function HomePage() {
   return (
     <>
       <HomeStyle>
         <Left>
-          <Title>選擇顧傭兵 讓你好放心！！</Title>
+          <Title>選擇顧傭兵 讓你好放心！</Title>
           <Description>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse qui
             et, aperiam labore veritatis sunt, officia necessitatibus
