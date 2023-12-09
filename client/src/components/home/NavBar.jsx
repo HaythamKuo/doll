@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import {
   NavContainer,
   NavLeft,
@@ -10,12 +11,27 @@ import {
   MoonIcon,
   SunIcon,
   MobileBar,
-} from "../styles/Nav.style";
+} from "../../styles/Nav.style";
 
-import logo from "../assets/Humaaans - Buy Online.png";
-//import { FaRegSun, FaMoon } from "react-icons/fa";
+import logo from "../../assets/Humaaans - Buy Online.png";
 
-function NavBar() {
+function NavBar(prop) {
+  const [icon, setIcon] = useState(false);
+  const { toggleTheme } = prop;
+
+  /**
+   * 切換日/夜模式方法
+   */
+  function onToggle() {
+    setIcon((preIcon) => !preIcon);
+    toggleTheme();
+  }
+  const toggleIcon = icon ? (
+    <SunIcon onClick={onToggle} />
+  ) : (
+    <MoonIcon onClick={onToggle} />
+  );
+
   return (
     <NavContainer>
       <NavLeft>
@@ -34,9 +50,7 @@ function NavBar() {
         </NavUl>
         <MobileBar />
       </NavCenter>
-      <NavRight>
-        <MoonIcon />
-      </NavRight>
+      <NavRight>{toggleIcon}</NavRight>
     </NavContainer>
   );
 }

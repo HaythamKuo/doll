@@ -7,10 +7,10 @@ import {
   RightImg,
 } from "../styles/Home.style";
 import { BtnContainer, BtnStyle } from "../styles/Button.style";
-import Img from "../assets/touchDog.svg";
-import MainProd from "../components/MainProd";
-import ProdList from "../components/ProdList";
-import MainProdItem from "../components/MainProdItem";
+import Img from "../assets/dog-walking.svg";
+import MainProd from "../components/home/MainProd";
+import ProdList from "../components/home/ProdList";
+import MainProdItem from "../components/home/MainProdItem";
 import snowMoutain from "../assets/snowmoutain.jpg";
 import toChange from "../assets/touchDog.svg";
 import { golden, husky } from "../../public/hashtag";
@@ -34,8 +34,11 @@ function HomePage() {
             <BtnStyle>關於我們</BtnStyle>
           </BtnContainer>
         </Left>
+
         <Right>
           <RightImg src={Img} alt="imgage" />
+
+          {/* <RightImg /> */}
         </Right>
       </HomeStyle>
 

@@ -67,7 +67,7 @@ export const NavUl = styled.ul`
   }
 `;
 export const NavLi = styled.li`
-  color: black;
+  color: ${({ theme }) => theme.basic.fontColor};
   font-size: ${({ theme }) => theme.basic.lisize};
   font-weight: bold;
   cursor: pointer;
@@ -100,8 +100,10 @@ export const NavRight = styled(NavLeft)`
 export const MoonIcon = styled(FaMoon)`
   font-size: 2.5rem;
   cursor: pointer;
+  color: ${({ theme }) => theme.basic.icon};
 `;
 export const SunIcon = styled(FaRegSun)`
   font-size: 2.5rem;
   cursor: pointer;
+  color: ${({ theme }) => theme.basic.icon};
 `;

@@ -1,6 +1,6 @@
-import { HomeProd } from "../styles/HomeProd.style";
+import { HomeProd } from "../../styles/HomeProd.style";
 import MainProdItem from "./MainProdItem";
-import desert from "../assets/desert.jpg";
+import desert from "../../assets/desert.jpg";
 
 function MainProd() {
   return (

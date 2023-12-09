@@ -3,7 +3,7 @@ import { FlexLayout } from "./Theme.style";
 
 export const Container = styled.div`
   padding: 1rem 2rem;
-  background-color: white;
+  background-color: ${({ theme }) => theme.basic.bgColor};
 `;
 
 export const Wrapper = styled.div`
@@ -22,7 +22,7 @@ export const Wrapper = styled.div`
 export const Header = styled.div`
   font-weight: bold;
   font-size: 3.5rem;
-  color: #094d92;
+  color: ${({ theme }) => theme.basic.header};
   //for 手機
   @media (max-width: ${({ theme }) => theme.rwd.mobile}) {
     text-align: center;
@@ -82,7 +82,7 @@ export const List = styled(FlexLayout)`
   }
 `;
 export const ListItem = styled.li`
-  color: #3d5a80;
+  color: ${({ theme }) => theme.basic.liColor};
   border: 2px solid white;
   border-left: 5px solid ${({ theme }) => theme.basic.primaryColor};
   padding: 2rem 2rem;

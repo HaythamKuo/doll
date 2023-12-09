@@ -1,4 +1,4 @@
-import { TextWrapper, ProdList, Title } from "../styles/HomeProd.style";
+import { TextWrapper, ProdList, Title } from "../../styles/HomeProd.style";
 
 function MainProdItem(prop) {
   const { title, image } = prop;

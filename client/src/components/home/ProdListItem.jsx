@@ -1,4 +1,4 @@
-import { List, ListItem } from "../styles/ProdList.style";
+import { List, ListItem } from "../../styles/ProdList.style";
 
 function ProdListItem(prop) {
   const { creature } = prop;

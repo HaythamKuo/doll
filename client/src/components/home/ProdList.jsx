@@ -7,7 +7,7 @@ import {
   Image,
   Right,
   Left,
-} from "../styles/ProdList.style";
+} from "../../styles/ProdList.style";
 
 import ProdListItem from "./ProdListItem";
 

@@ -66,5 +66,5 @@ export const Right = styled.div`
 
 export const RightImg = styled.img`
   width: 100%;
-  height: 50rem;
+  height: 45rem;
 `;

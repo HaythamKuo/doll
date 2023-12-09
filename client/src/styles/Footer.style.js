@@ -11,7 +11,7 @@ export const Container = styled(FlexLayout)`
 `;
 
 export const Title = styled.div`
-  color: ${({ theme }) => theme.basic.bgColor};
+  color: white;
   font-weight: bold;
   font-size: 3rem;
   padding: 2%;
@@ -22,13 +22,16 @@ export const Title = styled.div`
 `;
 export const Desc = styled.div`
   margin-top: 3rem;
-  color: ${({ theme }) => theme.basic.bgColor};
+  color: white;
   font-size: ${({ theme }) => theme.basic.lisize};
   display: flex;
   align-items: center;
   font-weight: bold;
   flex-direction: column;
   width: 30%;
+  p {
+    text-align: center;
+  }
 
   @media (max-width: ${({ theme }) => theme.rwd.mobile}) {
     width: 100%;
@@ -55,6 +58,7 @@ export const UlContainer = styled.div`
 `;
 
 export const FooterUl = styled(NavUl)`
+  margin-top: 1rem;
   @media (max-width: ${({ theme }) => theme.rwd.mobile}) {
     display: flex;
     margin: 1rem auto;
@@ -63,8 +67,9 @@ export const FooterUl = styled(NavUl)`
 `;
 
 export const LiStyle = styled(NavLi)`
-  color: ${({ theme }) => theme.basic.bgColor};
-  margin-top: 1rem;
+  color: white;
+
+  margin: 0 12px;
 
   @media (max-width: ${({ theme }) => theme.rwd.mobile}) {
     margin: 0 10px;

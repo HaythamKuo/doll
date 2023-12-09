@@ -5,7 +5,7 @@ import {
   LiStyle,
   UlContainer,
   FooterUl,
-} from "../styles/Footer.style";
+} from "../../styles/Footer.style";
 
 import {
   SlSocialGithub,
