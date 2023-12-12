@@ -46,7 +46,9 @@ function NavBar(prop) {
           <NavLi>關於我們</NavLi>
           <NavLi>商品列表</NavLi>
           <NavLi>購物車</NavLi>
-          <NavLi>登入</NavLi>
+          <Link to="login">
+            <NavLi>登入</NavLi>
+          </Link>
         </NavUl>
         <MobileBar />
       </NavCenter>

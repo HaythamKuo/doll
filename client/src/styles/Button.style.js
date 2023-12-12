@@ -22,6 +22,5 @@ export const BtnStyle = styled.button`
     color: #0e131f;
     border: 1px solid black;
     background-position: left bottom;
-    cursor: pointer;
   }
 `;

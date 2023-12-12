@@ -1,5 +1,4 @@
 import { RouterProvider } from "react-router-dom";
-
 import { ResetStyle, GlobalStyle } from "./styles/GlobalStyle";
 import { router } from "./routes/Router";
 
