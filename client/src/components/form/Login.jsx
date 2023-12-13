@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Form } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import FormInput from "../components/form/FormInput";
-import { setUser } from "../store/slices/loginSlice";
-import { Container, FormDiv, LoginBtn } from "../styles/form/LoginFrom.style";
+import FormInput from "./FormInput";
+import { setUser } from "../../store/slices/loginSlice";
+import { LoginBtn } from "../../styles/form/LoginFrom.style";
 
 const loginInputs = [
   {
@@ -28,7 +28,7 @@ const loginInputs = [
   },
 ];
 
-function LoginPage() {
+function Login() {
   const [inputData, setInputData] = useState({});
   const dispatch = useDispatch();
   const { email, password } = useSelector((state) => state.login.loginInfo);
@@ -57,16 +57,12 @@ function LoginPage() {
   ));
 
   return (
-    <Container>
-      <FormDiv>
-        <Form onSubmit={handleSubmit}>
-          {loginContent}
-          <LoginBtn cursor="not-allowed" disabled={isSubmitDisabled}>
-            登入
-          </LoginBtn>
-        </Form>
-      </FormDiv>
-    </Container>
+    <Form onSubmit={handleSubmit}>
+      {loginContent}
+      <LoginBtn cursor="not-allowed" disabled={isSubmitDisabled}>
+        登入
+      </LoginBtn>
+    </Form>
   );
 }
-export default LoginPage;
+export default Login;
