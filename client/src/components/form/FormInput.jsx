@@ -7,10 +7,10 @@ import {
 } from "../../styles/Input.style";
 
 function FormInput(prop) {
-  const { label, errMes, onChange, pattern, ...inputprops } = prop;
+  const { label, errMes, onChange, pattern, proof, ...inputprops } = prop;
   const [isValid, setIsValid] = useState(true);
-
-  //傳遞資料給予LoginPage
+  console.log("label" + label);
+  //傳遞資料給予Login
   function handleInput(e) {
     const { value } = e.target;
     const isValidInput = !pattern || value.match(new RegExp(pattern)) !== null;
@@ -30,6 +30,7 @@ function FormInput(prop) {
       <InputLabel>{label}</InputLabel>
       <InputModule {...inputprops} onChange={handleInput} onBlur={handleBlur} />
       {!isValid && <InputSpan>{errMes}</InputSpan>}
+      {!proof && label === "二次確認密碼" && <InputSpan>{errMes}</InputSpan>}
     </Container>
   );
 }

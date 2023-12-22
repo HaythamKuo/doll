@@ -8,10 +8,10 @@ export const Container = styled(FlexLayout)`
 `;
 export const FormDiv = styled(FlexLayout)`
   border-radius: 50px;
-  height: 65vh;
+  //height: 65vh;
   background-color: ${({ theme }) => theme.basic.bgColor};
   margin: 5rem;
-  padding: 0 5rem;
+  padding: 2rem 5rem;
   box-shadow: 0 2rem 3rem ${({ theme }) => theme.basic.boxShadow};
 
   flex-direction: column;
@@ -23,6 +23,8 @@ export const LoginBtn = styled(BtnStyle)`
   font-size: 1.5rem;
   cursor: ${({ cursor }) => cursor || "pointer"};
 `;
+
+export const RegisterBtn = styled(LoginBtn)``;
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -38,5 +40,17 @@ export const TestDiv = styled.div`
     color: ${({ theme }) => theme.basic.header};
     font-size: 3rem;
     font-weight: bold;
+  }
+`;
+
+//第三方登入
+export const ThirdPartyLogin = styled.div`
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+  border-top: 1px solid black;
+  & > * {
+    cursor: pointer;
+    font-size: 3rem;
   }
 `;

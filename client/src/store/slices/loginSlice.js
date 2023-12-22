@@ -7,13 +7,11 @@ const loginSlice = createSlice({
   },
   reducers: {
     setUser: (state, action) => {
-      state.loginInfo = { ...action.payload };
-      //console.log(state.loginInfo);
+      state.loginInfo = action.payload;
+      console.log(state.loginInfo);
     },
-
-    clearUser: (state, action) => {},
   },
 });
 
 export const loginReducer = loginSlice.reducer;
-export const { setUser, clearUser } = loginSlice.actions;
+export const { setUser } = loginSlice.actions;

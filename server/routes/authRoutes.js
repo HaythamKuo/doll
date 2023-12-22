@@ -6,6 +6,11 @@ module.exports = (app) => {
     passport.authenticate("google", {
       //訪問授權資料
       scope: ["profile", "email"],
+
+      //動態生成callbackURL
+      // callbackURL: `http://${req.get(
+      //   "host"
+      // )}${currentPath}/auth/google/callback`,
     })
   );
 
