@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Form } from "react-router-dom";
+import { Form, Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import FormInput from "./FormInput";
 import { setUser } from "../../store/slices/loginSlice";
@@ -67,7 +67,9 @@ function Login() {
       </LoginBtn>
 
       <ThirdPartyLogin>
-        <FaGoogle />
+        <a href="/auth/google">
+          <FaGoogle />
+        </a>
         <FaLine />
       </ThirdPartyLogin>
     </Form>
